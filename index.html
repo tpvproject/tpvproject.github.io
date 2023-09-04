@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Animated Menu</title>
+   <link rel="stylesheet" href="styles_Digital.css">
+</head>
+<body>
+    <ul class="menu">
+        <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0;--clr:#d63144;">
+            <a href="flame.html"><ion-icon name="flame-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;--clr:#fee800;">
+            <a href="flash.html"><ion-icon name="flash-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;--clr:#0467fc;">
+            <a href="water.html"><ion-icon name="water-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;--clr:#86b1f7;">
+            <a href="snow.html"><ion-icon name="snow-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;--clr:#00a220;">
+            <a href="leaf.html"><ion-icon name="leaf-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5;--clr:#fea600;">
+            <a href="planet.html"><ion-icon name="planet-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6;--clr:#717171;">
+            <a href="index_Digital.html"><ion-icon name="analytics-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7;--clr:#6d00bb;">
+            <a href="skull.html"><ion-icon name="skull-outline"></ion-icon></a>
+        </li>
+    </ul>
+   </div>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function(){
+        menu.classList.toggle('active')
+    }
+   </script>
+</body>
+</html>
